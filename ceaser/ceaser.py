@@ -1,17 +1,15 @@
-# Using the Python,
-# have the function CaesarCipher(str, num) take the str parameter and perform a Caesar Cipher num on it using the num parameter as the numing number.
-# A Caesar Cipher works by numing all letters in the string N places down in the alphabetical order (in this case N will be num).
-# Punctuation, spaces, and capitalization should remain intact.
+key = 'abcdefghijklmnopqrstuvwxyz'
 
-# For example if the string is "Caesar Cipher" and num is 2 the output should be "Ecguct Ekrjgt".
+def encrypt(n, plaintext):
+    """Encrypt the string and return the ciphertext"""
+    result = ''
 
-# more on cipher visit http://practicalcryptography.com/ciphers/caesar-cipher/
-# happy coding :-)
+    for l in plaintext.lower():
+        try:
+            i = (key.index(l) + n) % 26
+            result += key[i]
+        except ValueError:
+            result += l
 
+    return result.lower()
 
-def CaesarCipher(string, num):
-    # Your code goes here
-
-
-
-print "Cipertext:", CaesarCipher("A Crazy fool Z", 1)

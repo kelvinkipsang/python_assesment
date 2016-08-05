@@ -10,11 +10,17 @@
 # Solution:
 class InputOutString(object):
     # code goes here
+<<<<<<< HEAD
 
+    def printer(x):
+        x = raw_input("enter text")
+        print str(x)
+    printer()
+=======
+    def __init__(self):
+        self.s = ""
 
-def printString(self):
-        print self.s.upper()
+    def getString(self):
+        self.s = raw_input("Write Down Any Word : ")
 
-strObj = InputOutString()
-strObj.getString()
-strObj.printString()
+>>>>>>> f6ef550329a1affe6fcc15ab6406c12c7cf1b8a6
