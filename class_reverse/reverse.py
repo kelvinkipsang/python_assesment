@@ -10,3 +10,11 @@
 # Solution:
 class InputOutString(object):
     # code goes here
+
+
+def printString(self):
+        print self.s.upper()
+
+strObj = InputOutString()
+strObj.getString()
+strObj.printString()
